@@ -28,7 +28,7 @@ const Resume = () => {
     formData.append("job_description", jobDesc);
 
     try {
-      const response = await fetch("https://resume-and-linkedin-optimizer.onrender.com/...", {
+      const response = await fetch("https://resume-and-linkedin-optimizer.onrender.com/resume/process-all", {
         method: "POST",
         body: formData,
         credentials: "include",
