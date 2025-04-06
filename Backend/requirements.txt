@@ -8,3 +8,4 @@ PyMuPDF
 pytesseract
 pillow
 PyPDF2
+python-multipart
