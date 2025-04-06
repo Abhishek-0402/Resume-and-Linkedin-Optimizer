@@ -9,3 +9,4 @@ pytesseract
 pillow
 PyPDF2
 python-multipart
+requests
