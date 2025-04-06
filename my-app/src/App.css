@@ -1,0 +1,721 @@
+/* Reset & base styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.hero-section img {
+  animation: float 3s ease-in-out infinite;
+  max-width: 400px;
+  height: auto;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Button */
+.btn-primary,
+.btn-light {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 6px;
+}
+
+.btn-light:hover {
+  background-color: #f1f1f1;
+}
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.feature-item {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  width: 300px;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+  width: 80px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item h4 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.feature-item img:hover {
+  transform: scale(1.1);
+}
+
+/* General layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* Fancy animated background */
+.animated-bg {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  background-size: 400% 400%;
+  animation: gradientMotion 12s ease infinite;
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+/* Gradient motion animation */
+@keyframes gradientMotion {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass card for form */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading and subtitle */
+.resume-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.resume-subtitle {
+  font-size: 1.2rem;
+  color: #f3f3f3;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.text-glow {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+/* Background */
+.linkedin-bg {
+  background: linear-gradient(-45deg, #1e1e2f, #3c3b5c, #2a3c4b, #1b2a41);
+  background-size: 600% 600%;
+  animation: linkedinGradientMove 12s ease infinite;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+@keyframes linkedinGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+/* Page container */
+.resume-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Header section */
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.resume-header p {
+  font-size: 1.1rem;
+  color: #eee;
+  margin-top: 0.5rem;
+}
+
+/* Form styling */
+.resume-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+}
+
+.resume-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.resume-form input[type="file"],
+.resume-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Placeholder fix for dark mode */
+.resume-form textarea::placeholder {
+  color: #ccc;
+}
+
+/* Stylish file upload button */
+.resume-form input[type="file"]::file-selector-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-form input[type="file"]::file-selector-button:hover {
+  background-color: #218838;
+}
+
+/* Submit button */
+.resume-form button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resume-form button:hover {
+  background-color: #218838;
+}
+
+/* Header icon pulse animation */
+.header-icon {
+  color: #ffb74d;
+  animation: pulse 2s infinite;
+  font-size: 2.2rem;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Mobile spacing */
+@media (max-width: 480px) {
+  .resume-page-container {
+    padding-bottom: 4rem;
+  }
+}
+.result-bg {
+  background: linear-gradient(135deg, #1e1e2f, #34354e, #3f4161);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.result-container {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  max-width: 900px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.result-header h1 {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.result-header p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.feedback-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  max-height: 500px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #28a745;
+}
+
+.placeholder-text {
+  color: #aaa;
+  font-style: italic;
+}
+
+.download-btn {
+  display: block;
+  background-color: #28a745;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+.header-icon {
+  color: #ffc107;
+  animation: pulse 2s infinite;
+  font-size: 2.2rem;
+}
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  color: #ffffff; /* Bright white for visibility */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.markdown-content p,
+.markdown-content li {
+  color: #e0e0e0; /* Light gray text */
+}
+
+.markdown-content ul {
+  padding-left: 1.5rem;
+}
+
+.markdown-content code {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00e676;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+/* Bold standalone text that acts like a heading */
+.markdown-content strong {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  font-weight: 700;
+}
+.markdown-h1, .markdown-h2, .markdown-h3 {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+}
+
+.markdown-p, .markdown-li {
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+/* Fix visibility for markdown headings inside feedback box */
+.feedback-box h1,
+.feedback-box h2,
+.feedback-box h3,
+.feedback-box h4,
+.feedback-box h5,
+.feedback-box h6 {
+  color: #fff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+/* Enhanced Resume Feedback Header */
+.result-header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ffe259, #ffa751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.result-header p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+/* Make icon glow slightly */
+.header-icon {
+  color: #ffc107;
+  font-size: 2.4rem;
+  animation: pulse-glow 2s infinite;
+}
+
+/* Smooth entrance animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Soft pulsing icon */
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+/* LinkedIn Result Header Styling */
+.linkedin-result-header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.linkedin-result-header p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* LinkedIn header icon */
+.linkedin-header-icon {
+  color: #00c6ff;
+  font-size: 2.4rem;
+  animation: pulse-glow 2s infinite;
+}
+/* LinkedIn Result Background - Green Gradient */
+/* === LinkedIn Result Page (FIXED) === */
+.linkedin-result-bg {
+  background: linear-gradient(-45deg, #0f4c5c, #0b7a75, #00a5cf, #057d9f);
+  background-size: 600% 600%;
+  animation: linkedinGradientMotion 16s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+@keyframes linkedinGradientMotion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes linkedinResultMotion {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.linkedin-result-container {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.linkedin-result-header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ffffff, #e0f7fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+
+.linkedin-result-header p {
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.linkedin-feedback-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #00a0dc;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  max-height: 500px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.linkedin-feedback-box h1,
+.linkedin-feedback-box h2,
+.linkedin-feedback-box h3,
+.linkedin-feedback-box h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.linkedin-download-btn {
+  background-color: #00a0dc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.linkedin-download-btn:hover {
+  background-color: #008dc9;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #66ccff;
+}
+
+input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  width: 200px;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.job-card {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+.rocket-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #a259ff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.rocket-brand:hover {
+  color: #d372ff;
+  text-shadow: 0 0 5px rgba(162, 89, 255, 0.6);
+}

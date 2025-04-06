@@ -1,0 +1,95 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-image {
+  max-width: 350px;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  background-color: #ffffff;
+  color: #6c5ce7;
+  font-weight: 600;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover {
+  background-color: #f3efff;
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+  background-color: #f5f7fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #2d3436;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.feature img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.feature h4 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.feature p {
+  font-size: 0.98rem;
+  color: #636e72;
+  line-height: 1.5;
+}

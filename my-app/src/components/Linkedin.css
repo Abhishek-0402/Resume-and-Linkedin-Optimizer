@@ -1,0 +1,90 @@
+.linkedin-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #43c6ac, #191654); /* Blue Lagoon */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.linkedin-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.linkedin-subtitle {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.linkedin-form {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.form-control::placeholder {
+  color: #ddd;
+}
+
+.form-control[type="file"]::file-selector-button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-control[type="file"]::file-selector-button:hover {
+  background-color: #218838;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 14px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}

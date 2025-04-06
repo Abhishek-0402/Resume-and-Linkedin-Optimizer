@@ -1,0 +1,97 @@
+/* Resume Container */
+.resume-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: #fff;
+  background: linear-gradient(-45deg, #ff4b2b, #ff416c, #1e3c72, #2a5298);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Heading & Subtitle */
+.resume-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #ffffffc9;
+}
+
+.resume-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Form Card */
+.resume-form {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Input Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  background-color: #ffffff;
+  color: #1e3c72;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #eaf3ff;
+  color: #0a254f;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}

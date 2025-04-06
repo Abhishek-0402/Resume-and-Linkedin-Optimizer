@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-docx
+python-dotenv
+openai
+reportlab
+PyMuPDF
+pytesseract
+pillow
+PyPDF2

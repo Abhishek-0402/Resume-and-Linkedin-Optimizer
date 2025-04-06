@@ -1,0 +1,94 @@
+.about-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #141e30, #243b55);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f0f0f0; /* Lighter text */
+}
+
+.about-container {
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.about-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff40;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  color: #e6e6e6; /* lighter subtitle */
+  margin-bottom: 30px;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #f5f5f5; /* lighter list text */
+}
+
+.tech-stack {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 1.05rem;
+  color: #efefef; /* lighter text */
+  margin-top: 10px;
+}
+
+.tech-icon {
+  margin-right: 8px;
+  color: #61dafb;
+}
+
+.about-footer {
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: center;
+  color: #cccccc;
+}
+
+.about-footer a {
+  color: #1da1f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 30px 0;
+}
+
+.crafted-line {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #ffdddd;
+}
+.about-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ffffff; /* Make it bright white */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Optional: subtle glow */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
