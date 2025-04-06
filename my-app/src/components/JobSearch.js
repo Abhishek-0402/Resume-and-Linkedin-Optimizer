@@ -15,7 +15,7 @@ function JobSearch() {
     setResults([]); // Clear previous results
 
     try {
-      const res = await fetch(`http://127.0.0.1:8000/api/jobs?query=${encodeURIComponent(query)}&location=${encodeURIComponent(location)}`);
+      const res = await fetch(`https://resume-and-linkedin-optimizer.onrender.com/api/jobs?query=${encodeURIComponent(query)}&location=${encodeURIComponent(location)}`);
       const data = await res.json();
       console.log("Fetched data:", data);
       setResults(data?.data ?? []);

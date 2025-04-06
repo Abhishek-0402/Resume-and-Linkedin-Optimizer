@@ -40,7 +40,7 @@ const LinkedInResult = () => {
         {downloadUrl && (
           <a
             className="download-btn"
-            href={`http://127.0.0.1:8000${downloadUrl}`}
+            href={`https://resume-and-linkedin-optimizer.onrender.com${downloadUrl}`}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -31,7 +31,7 @@ const LinkedIn = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://127.0.0.1:8000/linkedin/optimize", formData, {
+      const response = await axios.post("https://resume-and-linkedin-optimizer.onrender.com/linkedin/optimize", formData, {
         withCredentials: true,
       });
 

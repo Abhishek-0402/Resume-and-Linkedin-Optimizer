@@ -34,8 +34,8 @@ const ResumeResult = () => {
 
     const url =
       type === "summary"
-        ? `http://127.0.0.1:8000/resume/download-summary/pdf?session_id=${sessionId}`
-        : `http://127.0.0.1:8000/resume/download-updated-resume/pdf?session_id=${sessionId}`;
+        ? `https://resume-and-linkedin-optimizer.onrender.com/resume/download-summary/pdf?session_id=${sessionId}`
+        : `https://resume-and-linkedin-optimizer.onrender.com/resume/download-updated-resume/pdf?session_id=${sessionId}`;
 
     window.open(url, "_blank");
   };
