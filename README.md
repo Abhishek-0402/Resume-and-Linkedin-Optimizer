@@ -79,3 +79,7 @@ I treated the LLM as a component, not the decision-maker:
 🧾 Improve explainability of AI-generated suggestions
 
 ⚙️ Add background processing for heavier workflows
+
+🌐 Live Demo
+
+👉 https://resume-and-linkedin-optimizer.vercel.app
